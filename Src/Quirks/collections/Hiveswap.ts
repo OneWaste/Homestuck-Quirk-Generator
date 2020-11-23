@@ -1,4 +1,4 @@
-import { Category } from "./Category";
+import { Category } from "../Category";
 import { Daraya } from "../Quirks/Hiveswap/Daraya";
 import { Stelsa } from "../Quirks/Hiveswap/Stelsa";
 import { Kuprum } from "../Quirks/Hiveswap/Kuprum";

@@ -1,4 +1,4 @@
-import { Category } from "./Category";
+import { Category } from "../Category";
 
 import { Aradia } from "../Quirks/Alternia/Aradia";
 import { Tavros } from "../Quirks/Alternia/Tavros";

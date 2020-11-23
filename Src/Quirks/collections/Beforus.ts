@@ -1,4 +1,4 @@
-import { Category } from "./Category";
+import { Category } from "../Category";
 import { Rufioh } from "../Quirks/Beforus/Rufioh";
 import { Mituna } from "../Quirks/Beforus/Mituna";
 import { Cronus } from "../Quirks/Beforus/Cronus";

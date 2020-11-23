@@ -1,14 +1,13 @@
 {
   "name": "homestuck-quirk-generator",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A site that allows you to convert inputted text into the typing quirk of a Homestuck character.",
   "main": "Src/index.ts",
   "scripts": {
-    "deploy-live": "node_modules/.bin/browserify Src/index.ts -p [ tsify --noImplicitAny ] > App/bundle.js",
-    "watch": "node_modules/.bin/watchify Src/index.ts --debug -p [ tsify --noImplicitAny ] -o App/bundle.js",
-    "serve": "node_modules/.bin/live-server --open=App/ --watch=App/",
-    "minify-materialize.js": "node_modules/.bin/uglifyjs App/materialize/materialize.js --output App/materialize/materialize.min.js",
-    "minify-materialize.css": "node_modules/.bin/uglifycss App/materialize/materialize.css > App/materialize/materialize.min.css"
+    "clean": "rimraf ./deployment/*",
+    "frontend-build": "./node_modules/.bin/vue-cli-service serve --no-clean --dest ./deployment",
+    "frontend-watch": "yarn run frontend-build --watch",
+    "local-serve": "yarn run clean && yarn run frontend-watch"
   },
   "repository": {
     "type": "git",
@@ -21,16 +20,29 @@
   },
   "homepage": "https://quaternionmark.github.io/homestuck_quirk/",
   "dependencies": {
-    "@types/materialize-css": "^1.0.8",
-    "browserify": "^16.5.1",
-    "tsify": "^4.0.2",
-    "typed-html": "^2.0.0",
-    "typescript": "^3.9.5"
+    "core-js": "^3.6.5",
+    "rimraf": "^3.0.2",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
   },
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "uglify-js": "^3.10.0",
-    "uglifycss": "0.0.29",
-    "watchify": "^3.11.1"
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "concurrently": "^5.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "typescript": "~4.1.2"
   }
 }

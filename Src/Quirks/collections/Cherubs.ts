@@ -1,4 +1,4 @@
-import { Category } from "./Category";
+import { Category } from "../Category";
 import { Caliborn } from "../Quirks/Cherubs/Caliborn";
 import { Calliope } from "../Quirks/Cherubs/Calliope";
 

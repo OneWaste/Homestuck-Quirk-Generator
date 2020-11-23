@@ -1,7 +1,7 @@
 
 import { renderHTML } from "../Templates/QuirkField";
 import { setCookieBool } from "../CookieManager";
-import { Category } from "../Categories/Category";
+import { Category } from "../QuirkSet/Category";
 import { OptionalCheckbox } from "./OptionalCheckbox";
 import { selectAllAndCopy } from "../Copy2Clipboard";
 
