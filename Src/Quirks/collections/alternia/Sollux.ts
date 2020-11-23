@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 export class Sollux extends Quirk {
@@ -6,7 +6,7 @@ export class Sollux extends Quirk {
 
     constructor() {
         super("Sollux Captor");
-        this.dead = this.addCheckbox("Dead Quirk", "Sollux's typing quirk used when he is dead (o --> 0).");
+        this.dead = this.addMutator("Dead Quirk", "Sollux's typing quirk used when he is dead (o --> 0).");
     }
 
     quirkify(): void {

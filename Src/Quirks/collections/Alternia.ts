@@ -1,17 +1,17 @@
 import { Category } from "../Category";
 
-import { Aradia } from "../Quirks/Alternia/Aradia";
-import { Tavros } from "../Quirks/Alternia/Tavros";
-import { Sollux } from "../Quirks/Alternia/Sollux";
-import { Karkat } from "../Quirks/Alternia/Karkat";
-import { Nepeta } from "../Quirks/Alternia/Nepeta";
-import { Kanaya } from "../Quirks/Alternia/Kanaya";
-import { Terezi } from "../Quirks/Alternia/Terezi";
-import { Vriska } from "../Quirks/Alternia/Vriska";
-import { Equius } from "../Quirks/Alternia/Equius";
-import { Gamzee } from "../Quirks/Alternia/Gamzee";
-import { Eridan } from "../Quirks/Alternia/Eridan";
-import { Feferi } from "../Quirks/Alternia/Feferi";
+import { Aradia } from "./alternia/Aradia";
+import { Tavros } from "./alternia/Tavros";
+import { Sollux } from "./alternia/Sollux";
+import { Karkat } from "./alternia/Karkat";
+import { Nepeta } from "./alternia/Nepeta";
+import { Kanaya } from "./alternia/Kanaya";
+import { Terezi } from "./alternia/Terezi";
+import { Vriska } from "./alternia/Vriska";
+import { Equius } from "./alternia/Equius";
+import { Gamzee } from "./alternia/Gamzee";
+import { Eridan } from "./alternia/Eridan";
+import { Feferi } from "./alternia/Feferi";
 
 export class Alternia extends Category {
     constructor() {

@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 
@@ -7,7 +7,7 @@ export class Meenah extends Quirk {
 
     constructor() {
         super("Meenah Peixes", "feferi");
-        this.puns = this.addCheckbox("Fish Puns", "Shellf-explanatory!", true)
+        this.puns = this.addMutator("Fish Puns", "Shellf-explanatory!", true)
     }
 
     quirkify(): void {

@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 
 export class Tavros extends Quirk {
     constructor() {

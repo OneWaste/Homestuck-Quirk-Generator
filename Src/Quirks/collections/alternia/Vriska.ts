@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 export class Vriska extends Quirk {
@@ -7,8 +7,8 @@ export class Vriska extends Quirk {
 
     constructor() {
         super("Vriska Serket");
-        this.words = this.addCheckbox("Syllables to '8'", "Vriska's conversion of syllables that sound similar to '8' (such as ate) to the actual number.", true);
-        this.vowels = this.addCheckbox("Random Vowel Swaps", "Vriska's arbitrary conversion of vowels to the number '8'.", false);
+        this.words = this.addMutator("Syllables to '8'", "Vriska's conversion of syllables that sound similar to '8' (such as ate) to the actual number.", true);
+        this.vowels = this.addMutator("Random Vowel Swaps", "Vriska's arbitrary conversion of vowels to the number '8'.", false);
     }
 
     quirkify(): void {

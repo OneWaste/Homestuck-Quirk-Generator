@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 
@@ -7,7 +7,7 @@ export class Mituna extends Quirk {
 
     constructor() {
         super("Mituna Captor", "sollux");
-        this.sub = this.addCheckbox("Random S/7 -> 7H", "Mituna's arbitrary conversion of 'S' and '7' to '7H'.", true)
+        this.sub = this.addMutator("Random S/7 -> 7H", "Mituna's arbitrary conversion of 'S' and '7' to '7H'.", true)
     }
 
     quirkify(): void {

@@ -1,4 +1,4 @@
-export class OptionalCheckbox {
+export class QuirkMutator {
     label: string;
     hoverHint: string;
     defaultValue: boolean;

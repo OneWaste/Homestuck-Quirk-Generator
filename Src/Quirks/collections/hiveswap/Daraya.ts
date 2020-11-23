@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 
@@ -7,7 +7,7 @@ export class Daraya extends Quirk {
 
     constructor() {
         super("Daraya Jonjet", "bronya");
-        this.emphasis = this.addCheckbox("Emphasis", "Surrounds Daraya's text with triple the amount of triangles for emphasis.");
+        this.emphasis = this.addMutator("Emphasis", "Surrounds Daraya's text with triple the amount of triangles for emphasis.");
     }
 
     quirkify(): void {

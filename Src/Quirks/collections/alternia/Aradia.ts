@@ -1,13 +1,12 @@
-import { Quirk } from "../Quirk";
-import { Category } from "../../QuirkSet/Category";
-import { OptionalCheckbox } from "../OptionalCheckbox";
+import { Quirk } from "../../Quirk";
+import { QuirkMutator } from "@/quirks/QuirkMutator";
 
 export class Aradia extends Quirk {
-    dead: OptionalCheckbox;
+    dead: QuirkMutator;
 
     constructor() {
         super("Aradia Medigo");
-        this.dead = this.addCheckbox("Dead Quirk", "Aradia's typing quirk used when she is dead (o --> 0).", true);
+        this.dead = this.addMutator("Dead Quirk", "Aradia's typing quirk used when she is dead (o --> 0).", true);
     }
 
     quirkify(): void {

@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 
@@ -7,7 +7,7 @@ export class Tavrisprite extends Quirk {
 
     constructor() {
         super("Tavrisprite");
-        this.vriskaPriority = this.addCheckbox("Vriska Priority", "Toggles between normal case (Vriska) and rEVERSE CAPS (Tavros).");
+        this.vriskaPriority = this.addMutator("Vriska Priority", "Toggles between normal case (Vriska) and rEVERSE CAPS (Tavros).");
     }
 
     quirkify(): void {

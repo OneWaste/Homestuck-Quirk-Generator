@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 export class Zebruh extends Quirk {
@@ -7,8 +7,8 @@ export class Zebruh extends Quirk {
 
     constructor() {
         super("Zebruh Codakk", "amisia");
-        this.black = this.addCheckbox("Black Romance", "Replaces the quadrant in Zebruh's quirk with the black romance variation.", false);
-        this.concupiscent = this.addCheckbox("Concupiscent", "Replaces the quadrant in Zebruh's quirk with the concupiscent variation.", false);
+        this.black = this.addMutator("Black Romance", "Replaces the quadrant in Zebruh's quirk with the black romance variation.", false);
+        this.concupiscent = this.addMutator("Concupiscent", "Replaces the quadrant in Zebruh's quirk with the concupiscent variation.", false);
     }
 
     quirkify(): void {

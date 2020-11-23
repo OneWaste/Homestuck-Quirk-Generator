@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 
@@ -7,7 +7,7 @@ export class Meulin extends Quirk {
 
     constructor() {
         super("Meulin Leijon", "nepeta");
-        this.puns = this.addCheckbox("Cat Puns", "Self-expurrnatory!", true);
+        this.puns = this.addMutator("Cat Puns", "Self-expurrnatory!", true);
     }
 
     quirkify(): void {

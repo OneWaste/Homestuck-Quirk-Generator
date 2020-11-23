@@ -1,4 +1,4 @@
-import { Quirk } from "../Quirk";
+import { Quirk } from "../../Quirk";
 import { OptionalCheckbox } from "../OptionalCheckbox";
 
 
@@ -7,7 +7,7 @@ export class Rufioh extends Quirk {
 
     constructor() {
         super("Rufioh Nitram", "tavros");
-        this.censor = this.addCheckbox("Censor", "Censors f*cking swear words.", false)
+        this.censor = this.addMutator("Censor", "Censors f*cking swear words.", false)
     }
 
     quirkify(): void {
